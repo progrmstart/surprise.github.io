@@ -1,0 +1,178 @@
+/* Styles pour la barre de navigation */
+header {
+    background-color: #32302d;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    position: relative;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50px;
+  }
+  
+  nav li:nth-of-type(1) a {
+    background-color: #8d863e;
+  }
+  
+  nav li:nth-of-type(2) a {
+    background-color: #7e6a40;
+  }
+  
+  nav li:nth-of-type(3) a {
+    background-color: #a96b3e;
+  }
+  
+  nav li a:hover {
+    transform: scale(1.1);
+  }
+  
+  nav li a::before,
+  nav li a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #333;
+    z-index: -1;
+  }
+  
+  nav li:nth-of-type(1) a::before,
+  nav li:nth-of-type(1) a::after {
+    background-color: #8d863e;
+  }
+  
+  nav li:nth-of-type(2) a::before,
+  nav li:nth-of-type(2) a::after {
+    background-color: #7e6a40;
+  }
+  
+  nav li:nth-of-type(3) a::before,
+  nav li:nth-of-type(3) a::after {
+    background-color: #a96b3e;
+  }
+  
+  nav li a:hover::before,
+  nav li a:hover::after {
+    transform: scale(1.5);
+  }
+  
+  /* Style pour le bouton "Clique ici et découvre ta surprise" */
+  .cta {
+    background-color: #cec23c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    margin-top: 100px;
+    border-radius: 500px;
+    text-align: center;
+    margin-left: 450px;
+
+  }
+  
+  .cta:hover {
+    background-color: #8d863e;
+  }
+  
+  /* Style pour le contenu principal */
+  main {
+    padding: 20px;
+  }
+  
+  
+  /* Style pour le message d'anniversaire */
+  .message {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f7d794;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .message h1 {
+    font-size: 48px;
+    color: #6d4c41;
+    margin-top: 0;
+  }
+  
+  .message p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin-top: 0;
+  }
+  
+  .message p:first-of-type {
+    margin-top: 20px;
+  }
+  
+  .message p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  /* Style pour la galerie des photos */
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  th {
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: #36c;
+    color: #fff;
+    text-align: left;
+  }
+  
+  td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+  
+  tbody tr:nth-child(even) th {
+    background-color: #25c;
+  }
+  
